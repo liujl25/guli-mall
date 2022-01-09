@@ -1,2 +1,2 @@
-# guli-mall
+# gulimall
 practice, 谷粒商城 from 尚硅谷
