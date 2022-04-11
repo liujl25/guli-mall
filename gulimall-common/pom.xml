@@ -85,6 +85,13 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
+        <!--解决springboot2.4后默认不读取boostrap.properties问题-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <!-- 自行修改相应版本-->
+            <version>3.0.2</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

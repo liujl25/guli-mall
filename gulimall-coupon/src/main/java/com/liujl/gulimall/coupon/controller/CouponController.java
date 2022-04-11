@@ -5,6 +5,7 @@ import com.liujl.common.utils.R;
 import com.liujl.gulimall.coupon.entity.CouponEntity;
 import com.liujl.gulimall.coupon.service.CouponService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -19,11 +20,14 @@ import java.util.Map;
  * @email liujl25@163.com
  * @date 2022-02-15 21:45:23
  */
+@RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+
 
     @RequestMapping("/member/list")
     public R memberCoupons(){
